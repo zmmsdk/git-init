@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './utils/register-vant.js'
+// 引入样式文件
+import './styles/index.less'
 
 Vue.config.productionTip = false
 

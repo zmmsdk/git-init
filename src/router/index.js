@@ -9,19 +9,19 @@ const routes = [
     name: 'login',
     path: '/login',
     component: () => import('@/views/login')
-  },
-  {
-    path: '/',
-    component: () => import('@/views/tab-bar'),
-    // 二级路由组件
-    children: [
-      { // 首页
-        name: 'home',
-        path: '', // 默认子路由
-        component: () => import('@/views/home')
-      }
-    ]
   }
+  // {
+  //   path: '/',
+  //   component: () => import('@/views/tab-bar'),
+  //   // 二级路由组件
+  //   children: [
+  //     { // 首页
+  //       name: 'home',
+  //       path: '', // 默认子路由
+  //       component: () => import('@/views/home')
+  //     }
+  //   ]
+  // }
 ]
 const router = new VueRouter({
   routes
