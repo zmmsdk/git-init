@@ -5,6 +5,7 @@ import store from './store'
 import './utils/register-vant.js'
 // 引入样式文件
 import './styles/index.less'
+import 'amfe-flexible'
 import { Icon } from 'vant'
 
 Vue.use(Icon)
