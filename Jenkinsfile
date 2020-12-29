@@ -1,10 +1,10 @@
+// #!groovy
 pipeline {
-    agent {
-        docker {
-            image 'node:10'
-            args '-p 20000:8080'
-        }
-    } 
+    agent any
+       tools {
+        nodejs 'NodeJS 11.5.0'
+        // gradle "gradle"
+    }
     stages {
         stage('Build') { 
             steps {
